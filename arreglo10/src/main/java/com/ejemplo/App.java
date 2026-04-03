@@ -5,17 +5,17 @@ import java.util.Random;
 public class App {
     public static void main(String[] args) {
         int[] miArreglo = new int[10];
-        Random random = new Random(); // esta linea es el generador de números
+        Random random = new Random();
 
-        // números aleatorios (ejemplo: del 1 al 100)
+        // bucle for clásico
         for (int i = 0; i < miArreglo.length; i++) {
-            miArreglo[i] = random.nextInt(100) + 1; 
+            miArreglo[i] = random.nextInt(100) + 1;
         }
 
-        // Imprimir el arreglo en pantalla.
-        System.out.println("Contenido aleatorio del arreglo:");
-        for (int valor : miArreglo) {
-            System.out.print(valor + " ");
+        //Recorrido e impresión con bucle for clásico
+        System.out.println("Contenido del arreglo (recorrido clásico):");
+        for (int i = 0; i < miArreglo.length; i++) {
+            System.out.println("Índice " + i + ": " + miArreglo[i]);
         }
     }
 }
