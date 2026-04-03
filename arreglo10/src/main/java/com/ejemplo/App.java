@@ -7,15 +7,16 @@ public class App {
         int[] miArreglo = new int[10];
         Random random = new Random();
 
-        // bucle for clásico
+        // Llenado (usamos for clásico porque necesitamos el índice para asignar)
         for (int i = 0; i < miArreglo.length; i++) {
-            miArreglo[i] = random.nextInt(100) + 1;
+            miArreglo[i] = random.nextInt(50) + 1;
         }
 
-        //Recorrido e impresión con bucle for clásico
-        System.out.println("Contenido del arreglo (recorrido clásico):");
-        for (int i = 0; i < miArreglo.length; i++) {
-            System.out.println("Índice " + i + ": " + miArreglo[i]);
+        System.out.println("--- Recorrido usando FOR-EACH ---");
+        
+        // Recorrido con For-Each (Sintaxis: tipo elemento : arreglo)
+        for (int numero : miArreglo) {
+            System.out.println("Valor detectado: " + numero);
         }
     }
 }
